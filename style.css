@@ -1,0 +1,246 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #fdffef;
+  gap: 100px;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 400px;
+}
+header h1 {
+  margin: 0;
+
+  font-weight: lighter;
+}
+header span a {
+  color: black;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+header .menu {
+  position: relative;
+}
+
+header .menu input {
+  display: none;
+}
+
+header .menu .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70vw;
+  height: 90vh;
+  background-color: #f8f8f8;
+  border: 10px solid black;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+header .menu input[type="checkbox"]:checked ~ .modal {
+  display: flex;
+}
+
+header .menu .modal nav {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+header .menu .modal nav label {
+  align-self: center;
+  cursor: pointer;
+  font-size: 24px;
+}
+header .menu .modal nav label:hover {
+  text-decoration: underline;
+  color: #0000007b;
+}
+header .menu .modal nav ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+}
+
+header .menu .modal nav ul li a {
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+}
+header .menu .modal nav ul li a:hover {
+  color: #0000007b;
+}
+header .menu label:hover {
+  color: #0000007b;
+}
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+main .building {
+  width: 1225px;
+  height: 170vh;
+  display: flex;
+  flex-direction: column;
+  transform: translate(80px);
+}
+main .building h1 {
+  justify-content: flex-start;
+  font-size: 70px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+main .building .committed {
+  display: flex;
+  justify-content: space-between;
+}
+main .building .committed span {
+  font-size: 24px;
+  font-weight: lighter;
+}
+main .building .committed button {
+  width: 160px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #eec355;
+  cursor: pointer;
+}
+main .building .committed button:hover {
+  transition: 0.8s;
+  background-color: black;
+  color: #eec355;
+}
+main .building div img {
+  margin-top: 40px;
+  width: 1225px;
+  height: 935px;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+main .About {
+  width: 90vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 80px;
+  align-items: center;
+}
+main .About .about {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+main .About .about h1 {
+  font-size: 80px;
+  font-weight: lighter;
+  margin: 0;
+}
+main .About .about p {
+  font-weight: lighter;
+}
+main .About div img {
+  width: 564px;
+  height: 614px;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+main .About .about button {
+  width: 160px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #eec355;
+  cursor: pointer;
+}
+main .About .about button:hover {
+  transition: 0.8s;
+  background-color: black;
+  color: #eec355;
+}
+main .white {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+main .white .latest {
+  background-color: #f8f8f8;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+main .white .latest .new h1 {
+  font-size: 80px;
+  text-align: center;
+  font-weight: lighter;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+main .white .latest .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  transform: translate(80px);
+}
+main .white .latest .content div {
+  width: 20vw;
+  font-size: smaller;
+  text-align: center;
+}
+main .white .latest .content div h2 {
+  font-weight: lighter;
+}
+main .white .test {
+  background-color: #f8f8f8;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+main .white .test h1 {
+  font-size: 80px;
+  transform: translate(80px);
+  font-weight: lighter;
+  margin: 0;
+  margin-top: 60px;
+}
+main .white .test .content_a {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  transform: translate(80px);
+}
+main .white .test .content_a div {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+main .white .test .content_a div h4 {
+  font-weight: lighter;
+}
+main .white .img img {
+  width: 100%;
+  height: auto;
+}
