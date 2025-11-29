@@ -244,3 +244,119 @@ main .white .img img {
   width: 100%;
   height: auto;
 }
+main .insights {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+}
+main .insights div h1 {
+  font-size: 80px;
+  transform: translate(80px);
+  font-weight: lighter;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+main .insights .content_b {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  transform: translate(80px);
+}
+main .insights .content_b .card {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  background-color: #fdffef;
+  border: solid 1px black;
+}
+main .insights .content_b .card h2 {
+  font-weight: lighter;
+  font-size: 24px;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+main .insights .content_b .card p {
+  margin-left: 10px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+main .insights .content_b .card div {
+  display: flex;
+  flex-direction: row;
+  gap: 263px;
+  border-top: solid 1px black;
+  width: 23vw;
+  transform: translate(10px);
+}
+main .insights .content_b .card div span {
+  margin: 20px 0;
+}
+main .insights button {
+  transform: translate(625px);
+  width: 160px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #eec355;
+  cursor: pointer;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+main .insights button:hover {
+  transition: 0.8s;
+  background-color: black;
+  color: #eec355;
+}
+main .contact {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fdffef;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+main .contact h1 {
+  font-size: 80px;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+main .contact span {
+  margin-bottom: 40px;
+}
+main .contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+main .contact form input {
+  width: 400px;
+  font-size: 12px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #fdffef;
+}
+main .contact form textarea {
+  font-size: 12px;
+  background-color: #fdffef;
+  resize: none;
+  height: 70px;
+  border-radius: 4px;
+}
+main .contact form button {
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #eec355;
+  cursor: pointer;
+}
+main .contact form button:hover {
+  transition: 0.8s;
+  background-color: black;
+  color: #eec355;
+}
