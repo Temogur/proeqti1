@@ -3,8 +3,11 @@ body {
   flex-direction: column;
   margin: 0;
   background-color: #fdffef;
-  gap: 100px;
   overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -94,28 +97,29 @@ main {
   flex-direction: column;
   gap: 150px;
 }
-main .building {
+main #building {
   width: 1225px;
   height: 170vh;
   display: flex;
   flex-direction: column;
   transform: translate(80px);
 }
-main .building h1 {
+main #building h1 {
+  margin-top: 90px;
   justify-content: flex-start;
   font-size: 70px;
   font-weight: lighter;
   margin-bottom: 20px;
 }
-main .building .committed {
+main #building .committed {
   display: flex;
   justify-content: space-between;
 }
-main .building .committed span {
+main #building .committed span {
   font-size: 24px;
   font-weight: lighter;
 }
-main .building .committed button {
+main #building .committed button {
   width: 160px;
   height: 40px;
   border: 2px solid black;
@@ -123,12 +127,12 @@ main .building .committed button {
   background-color: #eec355;
   cursor: pointer;
 }
-main .building .committed button:hover {
+main #building .committed button:hover {
   transition: 0.8s;
   background-color: black;
   color: #eec355;
 }
-main .building div img {
+main #building div img {
   margin-top: 40px;
   width: 1225px;
   height: 935px;
@@ -309,7 +313,7 @@ main .insights button:hover {
   background-color: black;
   color: #eec355;
 }
-main .contact {
+main #contact {
   width: 100%;
   height: auto;
   display: flex;
@@ -319,44 +323,220 @@ main .contact {
   align-items: center;
   gap: 30px;
 }
-main .contact h1 {
+main #contact h1 {
   font-size: 80px;
   font-weight: lighter;
   margin-bottom: 0;
 }
-main .contact span {
+main #contact span {
   margin-bottom: 40px;
 }
-main .contact form {
+main #contact form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
 }
 
-main .contact form input {
+main #contact form input {
   width: 400px;
   font-size: 12px;
   height: 30px;
   border-radius: 4px;
   background-color: #fdffef;
 }
-main .contact form textarea {
+main #contact form textarea {
   font-size: 12px;
   background-color: #fdffef;
   resize: none;
   height: 70px;
   border-radius: 4px;
 }
-main .contact form button {
+main #contact form button {
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #eec355;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+main #contact form button:hover {
+  transition: 0.8s;
+  background-color: black;
+  color: #eec355;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+  gap: 500px;
+  background-color: #f8f8f8;
+}
+
+footer .half_b {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  gap: 20px;
+}
+footer .half_a {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  gap: 20px;
+}
+footer .half_a h1 {
+  font-size: 50px;
+  font-weight: lighter;
+  margin-bottom: 200px;
+}
+footer .half_a div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+footer .half_a .emoji {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+footer .half_a .emoji a {
+  color: black;
+}
+footer .half_b form {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+footer .half_b form textarea {
+  font-size: 12px;
+  resize: none;
+  height: 35px;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+footer .half_b form button {
   height: 40px;
   border: 1px solid black;
   border-radius: 20px;
   background-color: #eec355;
   cursor: pointer;
 }
-main .contact form button:hover {
+footer .half_b form button:hover {
   transition: 0.8s;
   background-color: black;
   color: #eec355;
+}
+footer .half_b h1 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+footer .half_b .privacy {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+footer .half_b .privacy a {
+  color: black;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 15px;
+}
+footer .half_b a {
+  color: black;
+}
+main .policy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(30vw);
+  height: 150vh;
+}
+main .policy div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+  gap: 10px;
+  line-height: 25px;
+}
+main .policy h1 {
+  font-size: 80px;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+main .policy span a {
+  color: black;
+}
+main .black {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40vh;
+  gap: 20px;
+  background-color: black;
+  color: #fdffef;
+}
+main .black p,
+main .black i,
+main .black span {
+  width: 70vw;
+  font-size: 20px;
+  font-weight: bolder;
+  transform: translate(16vw);
+}
+main .black p {
+  margin-top: 35px;
+}
+main .black span a {
+  color: #fdffef;
+}
+main .accessibility {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  height: 290vh;
+}
+main .accessibility .title {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  gap: 20px;
+  transform: translate(10vw, -20vh);
+  border-bottom: 1px solid black;
+}
+main .accessibility .title h1 {
+  margin: 0;
+  font-size: 90px;
+  font-weight: lighter;
+}
+main .accessibility .title h1,
+main .accessibility .title span,
+main .accessibility .title p {
+  width: 60vw;
+  transform: translate(6vw);
+}
+main .accessibility .title p {
+  margin-bottom: 40px;
+}
+main .accessibility div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60vw;
+  transform: translate(16vw, -16vh);
+}
+main .accessibility div h1 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: lighter;
 }
