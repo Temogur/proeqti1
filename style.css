@@ -275,13 +275,20 @@ main .insights .content_b .card {
   background-color: #fdffef;
   border: solid 1px black;
 }
-main .insights .content_b .card h2 {
+main .insights .content_b .card a {
+  color: black;
+  text-decoration: none;
+}
+main .insights .content_b .card a:hover {
+  color: rgb(88, 88, 88);
+}
+main .insights .content_b .card a h2 {
   font-weight: lighter;
   font-size: 24px;
   margin-bottom: 0;
   margin-left: 10px;
 }
-main .insights .content_b .card p {
+main .insights .content_b .card a p {
   margin-left: 10px;
   font-weight: 100;
   margin-bottom: 20px;
@@ -539,4 +546,255 @@ main .accessibility div h1 {
   margin: 0;
   font-size: 60px;
   font-weight: lighter;
+}
+main .all a {
+  color: grey;
+  text-decoration: none;
+}
+main .all {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transform: translate(0, 5vh);
+  gap: 30vw;
+}
+main .posts {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  transform: translate(16vw);
+  height: 200vh;
+}
+main .posts h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 40px;
+  transform: translate(2vw);
+}
+main .posts div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  border: 1px solid black;
+  width: 63vw;
+}
+main .posts div img {
+  width: 30vw;
+  height: 50vh;
+}
+main .posts div .read .admin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+main .posts div .read .admin .sg img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+main .posts div .read {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 40vh;
+  gap: 20px;
+}
+main .posts div .read .admin .sg .mar {
+  display: flex;
+  flex-direction: column;
+  font-size: smaller;
+  gap: 0;
+}
+main .posts div .read .admin .sg {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+main .posts div .read a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+main .posts div .read a:hover {
+  color: rgb(88, 88, 88);
+}
+main .posts div .read a h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: lighter;
+}
+main .posts div .read a p {
+  font-weight: lighter;
+}
+
+main .posts div .read .view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+}
+main .posts div .read .view .com {
+  font-size: smaller;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+main .posts div .read .view i {
+  margin-top: 10px;
+}
+main .alll a {
+  color: grey;
+  text-decoration: none;
+}
+main .alll {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transform: translate(1vw, 5vh);
+  gap: 18vw;
+}
+main .people {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  transform: translate(20vw);
+  border: 1px solid rgba(128, 128, 128, 0.179);
+  padding: 40px 80px;
+}
+main .people .min {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .people .min .sg img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+main .people .min .sg {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+main .people .min .sg span {
+  transform: translate(0, 5px);
+}
+main .people h1 {
+  font-size: 35px;
+  font-weight: lighter;
+}
+main .people span {
+  font-size: 13px;
+  font-weight: lighter;
+}
+main .people .post {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+main .people .post img {
+  width: 50vw;
+  height: 60vh;
+}
+main .people .x {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  border-top: 1px solid gray;
+  padding: 20px 0;
+}
+main .people .x i:hover {
+  color: rgba(0, 0, 255, 0.693);
+}
+main .people .view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+}
+main .people .view .com {
+  font-size: smaller;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+}
+main .people .view i {
+  margin-top: 20px;
+}
+main .alls a {
+  color: grey;
+  text-decoration: none;
+}
+main .alls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transform: translate(1.5vw, -18vh);
+  gap: 14vw;
+}
+main .posta .post_a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 20vw;
+  border: 1px solid rgba(128, 128, 128, 0.179);
+}
+main .posta {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  transform: translate(20vw, -35vh);
+}
+main .posta .post_a .post_b {
+  width: 16vw;
+  transform: translate(2vw);
+}
+main .posta .post_a .post_b a {
+  color: black;
+  text-decoration: none;
+}
+main .posta .post_a .post_b a:hover {
+  color: rgb(88, 88, 88);
+}
+main .posta .post_a .post_c {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 16vw;
+  transform: translate(2vw);
+  border-top: 1px solid gray;
+  padding: 15px 0;
+}
+main .posta .post_a .post_c div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+main .comment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50vw;
+  border: 1px solid rgba(128, 128, 128, 0.179);
+  padding: 40px 80px;
+  transform: translate(20vw, -50vh);
+}
+main .comment h2 {
+  font-size: 17px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+  color: #161334;
+  font-weight: lighter;
+}
+main .comment textarea {
+  font-size: 12px;
+  background-color: #fdffef;
+  resize: none;
+  height: 15px;
+  padding: 20px 15px;
 }
