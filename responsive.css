@@ -1,0 +1,183 @@
+@media (max-width: 1024px) {
+  header {
+    gap: 100px;
+    padding: 0 20px;
+  }
+
+  main #building {
+    width: 90%;
+    transform: translate(0);
+    margin: auto;
+  }
+
+  main #building div img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .About {
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  main .About .about {
+    width: 80%;
+    margin: auto;
+  }
+
+  main .About div img {
+    width: 80%;
+  }
+
+  main .white .latest .content {
+    grid-template-columns: repeat(2, 1fr);
+    transform: translate(0);
+    justify-items: center;
+    gap: 20px;
+  }
+
+  main .white .test .content_a {
+    grid-template-columns: repeat(2, 1fr);
+    transform: translate(0);
+    justify-items: center;
+  }
+
+  main .insights .content_b {
+    grid-template-columns: repeat(2, 1fr);
+    transform: translate(0);
+    gap: 20px;
+  }
+
+  main .insights .content_b .card {
+    width: 40vw;
+  }
+
+  footer {
+    gap: 150px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  header span a {
+    font-size: 16px;
+  }
+
+  main #building h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  main #building .committed {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  main .About h1 {
+    font-size: 50px;
+  }
+
+  main .white .latest .content,
+  main .white .test .content_a,
+  main .insights .content_b {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    transform: translate(0);
+  }
+
+  main .insights .content_b .card {
+    width: 80vw;
+  }
+
+  main #contact h1 {
+    font-size: 50px;
+  }
+
+  main #contact form input,
+  main #contact form textarea {
+    width: 300px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 100px;
+  }
+
+  footer .half_b form {
+    width: 80vw;
+  }
+}
+@media (max-width: 480px) {
+  * {
+    transform: none;
+  }
+
+  section,
+  .content,
+  .content_a,
+  .content_b,
+  .About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .content > div,
+  .content_a > div,
+  .content_b > .card,
+  .About .about,
+  .About > div,
+  main #building,
+  main #building div img {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  p,
+  span {
+    font-size: 14px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .content_b .card div {
+    width: 90%;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  main #contact form input,
+  main #contact form textarea {
+    width: 90%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  footer .half_b form {
+    width: 90%;
+  }
+}
