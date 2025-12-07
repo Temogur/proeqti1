@@ -1,4 +1,10 @@
 @media (max-width: 1024px) {
+  body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
   header {
     gap: 100px;
     padding: 0 20px;
@@ -8,6 +14,7 @@
     width: 90%;
     transform: translate(0);
     margin: auto;
+    height: auto;
   }
 
   main #building div img {
@@ -25,12 +32,16 @@
   main .About .about {
     width: 80%;
     margin: auto;
+    font-size: larger;
   }
 
   main .About div img {
     width: 80%;
   }
-
+  main .white .latest,
+  main .white .test {
+    height: 50vh;
+  }
   main .white .latest .content {
     grid-template-columns: repeat(2, 1fr);
     transform: translate(0);
@@ -45,17 +56,54 @@
   }
 
   main .insights .content_b {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     transform: translate(0);
     gap: 20px;
   }
 
   main .insights .content_b .card {
-    width: 40vw;
+    width: 28vw;
   }
-
+  main .insights .content_b .card .emoji {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+  main .insights a button {
+    transform: translate(40vw);
+  }
+  main .posts div,
+  main .posts div img {
+    height: 27vh;
+  }
+  main .posts {
+    height: 120vh;
+  }
   footer {
     gap: 150px;
+    height: 50vh;
+  }
+  main .policy {
+    height: 100vh;
+  }
+  main .black {
+    height: 20vh;
+  }
+  main .title {
+    height: 20vh;
+    margin-top: 15vh;
+  }
+  main .accessibility {
+    height: auto;
+  }
+  main .alls,
+  main .posta,
+  main .comment {
+    margin-top: 10vh;
+  }
+  main .people .post img {
+    height: auto;
   }
 }
 @media (max-width: 768px) {
