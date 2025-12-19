@@ -115,8 +115,8 @@ header {
 }
 header h1 {
   margin: 0;
-
-  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 header span a {
   color: black;
@@ -210,10 +210,11 @@ main #building {
   transform: translate(80px);
 }
 main #building h1 {
+  font-family: "Roboto", sans-serif;
   margin-top: 90px;
   justify-content: flex-start;
   font-size: 70px;
-  font-weight: lighter;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 main #building .committed {
@@ -259,8 +260,9 @@ main .About .about {
   gap: 40px;
 }
 main .About .about h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 80px;
-  font-weight: lighter;
   margin: 0;
 }
 main .About .about p {
